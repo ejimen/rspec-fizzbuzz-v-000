@@ -1,7 +1,11 @@
 def fizzbuzz(int)
-when int % 3 == 0 then "Fizz"
-when int % 5 == 0 then "Buzz"
-when int % 15 == 0 then "FizzBuzz"
-else int then "nil"
+if int % 3 == 0
+  puts "Fizz"
+elsif int % 5 == 0
+  puts "Buzz"
+elsif int % 3 == 0 && int % 5 == 0
+  puts "FizzBuzz"
+else
+  puts "nil"
 end
 end
